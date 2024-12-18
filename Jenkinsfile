@@ -6,6 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
+                    reuseNode true
                     //args '-u 1000:1000 --privileged'
                 }
             }
